@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualización Saldo</title>
+    <link rel="stylesheet" href="/recursos/css/verSaldo.css">
+</head>
+
+<body>
+    <div class="contenedorP">
+        <div class="caja">
+            <div class="hijo1">
+                <h1>Saldo Total</h1>
+                <br>
+            </div>
+            <div class="hijo">
+                <div class="imagen"></div>
+                <div class="saldo">
+                    <% if (login) { %>
+                        <h1>
+                            <%= name %>
+                            <br>
+                            <%= dinero %>
+                        </h1>
+                        <%} else { %>
+                            <h1>
+                                <%= name %>
+                                <br>
+                                <%= dinero %>
+                            </h1>
+                            <% } %>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const tiempo = function () {
+        setTimeout(function () {
+            window.location='/menu'
+        }, 9000);
+    };
+    tiempo();
+    </script>
+</body>
+</html>

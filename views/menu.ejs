@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="/recursos/css/menu.css">
+</head>
+<body>
+    <div class="cabecera">
+        <div class="logo"></div>
+    </div>
+    <div class="cuerpo">
+        <div class="botonera">
+            <h1>Menu</h1>
+            <div class="botones">
+                <button class="boton" id="ver" onclick="see()">
+                    Añadir Nuevo Producto
+                </button>
+                <button class="boton" id="retirar" onclick="ret()">
+                    Actualizar Almacen
+                </button>
+            </div>
+            <div class="botones">
+                <button class="boton" id="deposito" onclick="dep()">
+                    Facturacion
+                </button>
+                <button class="boton" id="transaccion" onclick="trans()">
+                    Salir
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function see(){
+            window.location='/saldo'
+        }
+        function ret(){
+            window.location='/retiro'
+        }
+        function dep(){
+            window.location='/deposito'
+        }
+        function trans(){
+            window.location='/transaccion'
+        }
+        function salir(){
+            window.location='/'
+        }
+    </script>
+</body>
+</html>

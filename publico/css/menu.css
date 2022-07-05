@@ -1,0 +1,184 @@
+body,p{
+    margin: 0;
+    font-family: sans-serif;
+    color:rgb(29, 29, 29);
+}
+
+body,html{
+    height: 100%;
+    background-image: linear-gradient(0deg, #008695, #a9f3fb);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.cabecera{
+    display: flex;
+    width: 100%;
+    height: 20%;
+}
+
+.cuerpo{
+    width: 100%;
+    height: 60%;
+}
+
+.pie{
+    width: 100%;
+    height: 20%;
+}
+
+.logo{
+    background-image: url(/Imagenes/imagenLogo.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 20px 20px;
+}
+
+.cuerpo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flecha{
+    display: flex;
+    justify-content: end;
+    width: auto;
+    font-size: 80px;
+    align-items: center;
+    padding-right: 30px;
+    margin-right: 20px;
+
+}
+
+.botonera{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.botones{
+    margin-bottom: 50px;
+}
+
+.boton{
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    padding: 6px 20px;
+    background-color:aquamarine;
+    transition: 800ms;
+    margin-right: 50px;
+    margin-left: 50px;
+    width: 150px;
+}
+
+.boton:hover{
+    cursor: pointer;
+    box-shadow: none;
+    border-bottom: solid 3px rgb(255, 218, 95);
+    transform: scale(1.1);
+}
+
+.botonF{
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    padding: 6px 20px;
+    background-color:aquamarine;
+    transition: 3s;
+    margin-right: 30px;
+    margin-left: 1300px;
+}
+
+.botonF:hover{
+    cursor: pointer;
+    box-shadow: none;
+    border-bottom: solid 3px rgb(255, 218, 95);
+    transform: scale(1.1);
+}
+
+.pie{
+    display: flex;
+}
+
+.cabecera, .cuerpo, .pie{
+    animation: fadeIn 2000ms;
+}
+
+.botonF{
+    margin-left: 1400px;
+}
+
+@keyframes loaderSpin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@media  (max-width: 1200px) {
+    .cabecera{
+        text-align: center;
+    }
+
+    .cuerpo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .botones{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .boton{
+        width: 0px;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 10px;
+        width: 75px;
+        padding: 0;
+    }
+
+    .pie{
+        width: 100%;
+    }
+
+    .botonF{
+        width: 100%;
+        margin:0 ;
+        display: flex;
+        align-items: center;
+        padding: 0;
+        width: 70px;
+        justify-content: center;
+        text-align: center;
+        margin-left: 200px;
+   }
+
+   input{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+   }
+}

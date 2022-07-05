@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/recursos/css/login.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="login-box" id="login">
+                <center><img src="/recursos/css/images/imagenLogo.jpg" class="imagen"></center>
+                <h1 class="da">Login</h1>
+                <form action="/auth" method="POST">
+                    <center>
+                        <label for="tipo">Nombre: </label>
+                        <br>
+                        <input type="text" placeholder="Ingresa tu Tipo de Cuenta:" name="name" required>
+                        <br><br>
+                        <label for="password">NIP</label>
+                        <br>
+                        <input type="password" placeholder="Ingresa tu NIP" name="nip" required>
+                        <br>
+                        <input class="sub" type="submit" value="Log in">
+                        <a href="registro" class="btn-register">Register</a>
+                    </center>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <% if (typeof alert != "undefined") { %>
+        <script>
+            Swal.fire({
+            title:'<%= alertTitle %>',
+            text:'<%= alertMessage %>',
+            icon:'<%= alertIcon %>',
+            showConfirmButton: <%= showConfirmButton %>,
+            timer: <%= timer %>
+            }).then(()=>{
+                window.location='/<%= ruta %>'
+            })
+        </script>
+       <% } %>
+</body>
+
+</html>

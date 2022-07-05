@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashoka Tano</title>
+    <link rel="stylesheet" href="/resources/css/style.css">
+</head>
+<body>
+    <% if(login) { %>
+        <h1>El usuario conectado es: <strong><%= name %></strong>
+            <a href="logout" class="a-logout">Logout</a>
+    <% } else { %>
+        <h1><strong><%= name %></strong></h1>
+        <a href="login" class="a-login">Ir al login</a>
+    <% } %>
+</body>
+</html>

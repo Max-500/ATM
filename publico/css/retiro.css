@@ -1,0 +1,110 @@
+body,p{
+    margin: 0;
+    font-family: sans-serif;
+    color:rgb(29, 29, 29);
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(0deg, #008695, #a9f3fb);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.bloque1{
+    background-image: url(/Imagenes/imagenLogo.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100px;
+    height: 15%;
+    border-radius: 50%;
+    margin: 20px 20px;
+    text-align: center;
+    flex-direction: column;
+}
+
+.bloque2{
+    display: flex;
+    height: 20%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.bloque3{
+    display: flex;
+    height: 20%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bloque4{
+    display: flex;
+    height: 20%;
+    flex-direction:space-around;
+    justify-content: center;
+}
+
+.bloque5{
+    display: flex;
+    height: 20%;
+    flex-direction:space-around;
+    justify-content: center;
+}
+
+button{
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    padding: 6px 20px;
+    background-color:aquamarine;
+    transition: 800ms;
+    margin-right: 50px;
+    margin-left: 50px;
+    width: 150px;
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+}
+
+button:hover{
+    cursor: pointer;
+    box-shadow: none;
+    border-bottom: solid 3px rgb(255, 218, 95);
+    transform: scale(1.1);
+}
+
+.btn1{
+    margin: 0px 50px
+}
+
+.btn3{
+    margin: 0px 150px
+}
+
+.btn4{
+    margin: 0px 250px
+}
+
+@media  (max-width: 700px) {
+    .btn1{
+        width: 80px;
+    }
+    .btn2{
+        width: 80px;
+    }
+    .btn3{
+        width: 80px;
+        margin: 0px 50px;
+    }
+    .btn4{
+        width: 90px;
+        margin: 0px 60px;
+        text-align: center;
+    }
+}
