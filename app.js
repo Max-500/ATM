@@ -290,7 +290,7 @@ app.post('/trans', async(req, res)=>{
         }
     }else{
         
-    }
+    } 
 })
 
 // 12 - Autenticamos para las demas paginas
